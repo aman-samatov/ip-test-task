@@ -10,6 +10,20 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/core" />
+            <option value="$PROJECT_DIR$/core/common" />
+            <option value="$PROJECT_DIR$/core/uikit" />
+            <option value="$PROJECT_DIR$/features" />
+            <option value="$PROJECT_DIR$/features/productdetails" />
+            <option value="$PROJECT_DIR$/features/productdetails/api" />
+            <option value="$PROJECT_DIR$/features/productdetails/data" />
+            <option value="$PROJECT_DIR$/features/productdetails/ui" />
+            <option value="$PROJECT_DIR$/features/productdetails/viewmodel" />
+            <option value="$PROJECT_DIR$/features/productsbase" />
+            <option value="$PROJECT_DIR$/features/productsbase/api" />
+            <option value="$PROJECT_DIR$/features/productsbase/data" />
+            <option value="$PROJECT_DIR$/features/productsbase/ui" />
+            <option value="$PROJECT_DIR$/features/productsbase/viewmodel" />
           </set>
         </option>
         <option name="resolveExternalAnnotations" value="false" />
