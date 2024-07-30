@@ -5,10 +5,10 @@ plugins {
 
 android {
     namespace = "idea.platform.testtask"
-    compileSdk = 34
+    compileSdk = libs.versions.androidSdk.compile.get().toInt()
 
     defaultConfig {
-        minSdk = 23
+        minSdk = libs.versions.androidSdk.min.get().toInt()
     }
 
     compileOptions {
@@ -26,8 +26,6 @@ dependencies {
 
     implementation(libs.coroutines.core)
 
-    implementation(libs.timber)
-
-    implementation(projects.features.productsbase.api)
+    implementation(projects.features.productsbase.database)
     implementation(projects.core.common)
 }

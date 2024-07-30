@@ -19,6 +19,8 @@ android {
     buildTypes {
         release {
             isMinifyEnabled = true
+            isShrinkResources = true
+
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
@@ -48,6 +50,16 @@ dependencies {
     implementation(libs.androidx.activity.compose)
     implementation(platform(libs.androidx.compose.bom))
 
+    // https://github.com/InsertKoinIO/koin
+    implementation(libs.koin)
+
+    implementation(libs.timber)
+
     implementation(projects.core.uikit)
     implementation(projects.core.common)
+
+    implementation(projects.features.productsbase.database)
+    implementation(projects.features.productsbase.data)
+    implementation(projects.features.productsbase.ui)
+    implementation(projects.features.productsbase.viewmodel)
 }

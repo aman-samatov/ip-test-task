@@ -5,10 +5,10 @@ plugins {
 
 android {
     namespace = "idea.platform.testtask"
-    compileSdk = 34
+    compileSdk = libs.versions.androidSdk.compile.get().toInt()
 
     defaultConfig {
-        minSdk = 23
+        minSdk = libs.versions.androidSdk.min.get().toInt()
     }
 
     compileOptions {
@@ -26,12 +26,4 @@ dependencies {
     implementation(libs.koin)
 
     implementation(libs.coroutines.core)
-
-    implementation(libs.okhttp)
-    implementation(libs.okhttp.logging.interceptor)
-
-    implementation(libs.retrofit)
-    implementation(libs.converter.gson)
-
-    implementation(libs.timber)
 }

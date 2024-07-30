@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    namespace = "idea.platform.testtask"
-    compileSdk = 34
+    namespace = "idea.platform.ui"
+    compileSdk = libs.versions.androidSdk.compile.get().toInt()
 
     defaultConfig {
-        minSdk = 23
+        minSdk = libs.versions.androidSdk.min.get().toInt()
     }
 
     buildFeatures {
@@ -43,7 +43,9 @@ dependencies {
     implementation(libs.viewmodel.compose)
 
     implementation(libs.koin)
+    implementation(libs.koin.compose)
 
     implementation(projects.core.common)
+    implementation(projects.core.uikit)
     implementation(projects.features.productsbase.viewmodel)
 }
