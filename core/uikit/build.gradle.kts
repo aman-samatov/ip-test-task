@@ -6,10 +6,10 @@ plugins {
 
 android {
     namespace = "idea.platform.uikit"
-    compileSdk = 34
+    compileSdk = libs.versions.androidSdk.compile.get().toInt()
 
     defaultConfig {
-        minSdk = 23
+        minSdk = libs.versions.androidSdk.min.get().toInt()
     }
 
     buildFeatures {

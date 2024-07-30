@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="products_list">Список товаров</string>
+
+    <string name="products_search">Поиск товаров</string>
+    <string name="products_empty_base">База продуктов пуста</string>
+
+    <string name="product_stock">На складе</string>
+    <string name="product_addition_date">Дата добавления</string>
+
+    <string name="product_item_removing_title">Удаление товара</string>
+    <string name="product_item_removing_description">Вы действительно хотите удалить выбранный товар?</string>
+
+    <string name="product_item_change_title">Количество товара</string>
+    <string name="product_item_change_positive">Принять</string>
+    <string name="product_item_change_negative">Отмена</string>
+</resources>
